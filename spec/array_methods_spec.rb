@@ -1,22 +1,4 @@
-require 'spec_helper'
 
-describe "#using_include" do 
-  it "takes in arguments of an array and an element and returns true if the array includes that element, false if it does not." do 
-    array = ["wow", "I", "am", "really", "learning", "arrays!"]
-    element1 = "wow"
-    element2 = "Tardis"
-    expect(using_include(array, element1)).to eq(true)
-    expect(using_include(array, element2)).to eq(false)
-  end
-end
-
-describe "#using_sort" do 
-  it "takes in an argument of an array and returns the sorted array." do 
-    array = ["wow", "I", "am", "really", "learning", "arrays!"]
-    expect(using_sort(array).last).to eq("wow")
-    expect(using_sort(array).first).to eq("I")
-  end
-end
 
 describe "#using_reverse" do 
   it "takes in argument of an array and returns that same array with the contents reversed." do 
